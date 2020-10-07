@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <img src="" alt="logo" class="header__logo">
+        <nav class="header__nav">
+            <ul class="list">
+                <li class="list__item">menu 1
+                    <ul class="dropdown dropdown__list">
+                        <li class="dropdown__item">dropdown 1</li>
+                        <li class="dropdown__item">dropdown 2</li>
+                    </ul>
+                </li>
+                <li class="list__item">menu 2
+                    <ul class="dropdown dropdown__list">
+                        <li class="dropdown__item">dropdown 1</li>
+                        <li class="dropdown__item">dropdown 2</li>
+                        <li class="dropdown__item">dropdown 3</li>
+                        <li class="dropdown__item">dropdown 4</li>
+                    </ul>
+                </li>
+                <li class="list__item">menu 3
+                    <ul class="dropdown dropdown__list">
+                        <li class="dropdown__item">dropdown 1</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="article">
+        <article class="article__first">
+            <h1 class="article__header">Article title 1</h1>
+            <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, incidunt.</p>
+            <data class="article__publication-data">22.09.2020</data>
+            <p class="article__author">John Doe</p>
+            <figure class="photo"><img src="" alt="cat photo" class="photo__img">
+                <figcaption class="photo__author">Photo took by Cat Lover</figcaption>
+            </figure>
+            <table class="table">
+                <caption class="table__title">table with cats</caption>
+                <thead class="table__header">
+                    <tr class="table__row">
+                        <th class="table__item--header">cat name</th>
+                        <th class="table__item--header">cat weight</th>
+                    </tr>
+                </thead>
+                <tbody class="table__body">
+                    <tr class="table__row">
+                        <td class="table__item--body">Foxy</td>
+                        <td class="table__item--body">Fluffy</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__item--body">Oliwia</td>
+                        <td class="table__item--body">Feather weight</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <form action="" class="form"><label for="" class="form__label form__label--author">author</label><input
+                type="text" class="form__author"></form>
+        <label for="" class="form__label form__label--comment"></label><textarea class="form__text" rows='10' cols='40'
+            placeholder="enter your comment here"></textarea><br>
+        <input type="submit" value="submit your comment" class="form__btn">
+        <section class="comments">
+            <article class="comment comment--1">
+                <p class="comment__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam ad dolore
+                    illum inventore illo aut sint nesciunt, recusandae voluptatum sit.</p>
+                <p class="comment__author">Jane Foster</p>
+                <p class="comment__date">11/09/2020</p>
+            </article>
+
+            <article class="comment comment--2">
+                <p class="comment__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, magni!</p>
+                <p class="comment__author">Forest Gump</p>
+                <p class="comment__date">19/02/2018</p>
+            </article>
+
+            <article class="comment comment--3">
+                <p class="comment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magnam ab
+                    aliquid quos atque adipisci beatae ullam deserunt vitae tenetur omnis facere laborum, nulla sit
+                    doloremque accusamus quam necessitatibus aliquam vero soluta iste repellendus officiis sunt! Iure
+                    nulla neque dolorem.</p>
+                <p class="comment__author">John Doe</p>
+                <p class="comment__date">01/01/2009</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__copyrights">&copy; all rights reserved by Doge!</p>
+    </footer>
 </body>
+
 </html>
